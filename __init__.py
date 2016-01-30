@@ -156,7 +156,7 @@ class Router(RelativeLayout):
     route = StringProperty("")
 
     def __init__(self, **kwargs):
-        assert(route not in kwargs)
+        assert("route" not in kwargs)
         self.router_rules = {}
         self.init_routes()
         super(Router, self).__init__(**kwargs)
